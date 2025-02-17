@@ -1,0 +1,1 @@
+add_executable(pmpp-stencil pmpp-stencil.cu)

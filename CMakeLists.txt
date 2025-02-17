@@ -26,4 +26,5 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/test")
 set(CUDA_ARCHITECTURES 89)
 set(CMAKE_CUDA_ARCHITECTURES 89)
 
-add_executable(8-stencil 8-stencil.cu)
+# add_executable(8-stencil 8-stencil.cu)
+add_subdirectory(stencil)
