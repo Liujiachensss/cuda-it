@@ -20,6 +20,7 @@ set(CUDA_STANDARD_REQUIRED ON)
 include_directories(
     ~/learning/cuda-samples/Common
     ${CMAKE_CURRENT_SOURCE_DIR}/include
+    ${CMAKE_CURRENT_SOURCE_DIR}
 )
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/test")
@@ -28,3 +29,4 @@ set(CMAKE_CUDA_ARCHITECTURES 89)
 
 # add_executable(8-stencil 8-stencil.cu)
 add_subdirectory(stencil)
+add_subdirectory(gemm)
