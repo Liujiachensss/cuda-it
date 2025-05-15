@@ -15,5 +15,5 @@ using _ptr = T *;
 // template <typename T>
 // using cr_ptr = const T * __restrict__;
 
-// template <typename T>
-// using cw_ptr = T * const __restrict__;
+template <typename T>
+using rd_cr_ptr = const T *__restrict__;  // read only

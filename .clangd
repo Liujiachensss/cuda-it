@@ -4,7 +4,8 @@ CompileFlags:
   # Remove extra warnings specified in compile commands.
   # Single value is also acceptable, same as "Remove: [-mabi]"
   # Remove: -mabi
-Diagnostics:
+  
+# Diagnostics:
   # Tweak Clang-Tidy checks.
   # ClangTidy:
   #   Add: [performance*, modernize*, google*, cppcoreguidelines-*]

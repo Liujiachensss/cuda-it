@@ -4,6 +4,7 @@
 
 #include <utils/type.cuh>
 
+// 写入时合并访存
 template <typename T>
 __global__ void mm_v1(ccr_ptr<T> A, ccr_ptr<T> B, r_ptr<T> C, int M, int N, int K) {
   int row = blockIdx.y * blockDim.y + threadIdx.y;

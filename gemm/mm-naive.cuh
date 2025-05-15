@@ -13,8 +13,8 @@
 
 template <typename T>
 __global__ void mm_naive(ccr_ptr<T> A, ccr_ptr<T> B, r_ptr<T> C, int M, int N, int K) {
-    int row = blockIdx.y * blockDim.y + threadIdx.y;
-    int col = blockIdx.x * blockDim.x + threadIdx.x;
+    int row = blockIdx.x * blockDim.x + threadIdx.x;
+    int col = blockIdx.y * blockDim.y + threadIdx.y;
     if (row < M && col < N) {
         float sum = 0.0f;
         for (int i = 0; i < K; i++) {
